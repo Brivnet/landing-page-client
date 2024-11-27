@@ -1,0 +1,18 @@
+{
+  "name": "brivnet",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch"
+  },
+  "author": "Okwulehie Tochukwu",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}
