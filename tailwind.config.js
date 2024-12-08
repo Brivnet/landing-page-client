@@ -16,6 +16,8 @@ module.exports = {
       animation: {
         "custom-bounce":
           "up-down 2s ease-in-out infinite alternate-reverse both",
+        "custom-zigzag":
+          "left-right 0.4s ease-in-out infinite alternate-reverse both",
       },
       colors: {
         primary: {

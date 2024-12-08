@@ -29,6 +29,10 @@ body.mobile-nav-open {
   @apply mx-[-15px] flex-row *:w-full flex flex-wrap gap-y-6 *:px-[15px];
 }
 
+.row.form-row {
+  @apply gap-y-[18px];
+}
+
 .active-link {
   @apply text-primary-100 relative lg:after:block lg:after:bottom-0 lg:after:left-0 lg:after:w-full lg:after:h-1 lg:after:bg-primary-100  lg:after:absolute;
 }
@@ -38,13 +42,8 @@ body.mobile-nav-open {
   @apply bg-primary-100 text-white font-semibold rounded-full px-6 py-3 hover:bg-primaryhover-100;
 }
 
-.button-transparent {
-  @apply font-semibold gap-x-2 text-primary-100 inline-flex items-center px-6 py-3;
-}
-
-.button-transparent > i {
-  @apply translate-x-0;
-  transition: transform 0.3s ease-in-out;
+.button.subscribe {
+  @apply xs:rounded-l-none;
 }
 
 .button-outline {
@@ -68,10 +67,6 @@ body.mobile-nav-open {
   @apply flex-col-reverse md:flex-row;
 }
 
-.button-transparent:hover > i {
-  @apply translate-x-1;
-}
-
 .scrolled {
   @apply bg-white border-b-1 border-gray-200;
 }
@@ -82,6 +77,10 @@ body.mobile-nav-open {
 
 a {
   transition: color 0.3s ease-in-out;
+}
+
+.easy-ease {
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -96,6 +95,15 @@ body {
 
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(4px);
   }
 }
 

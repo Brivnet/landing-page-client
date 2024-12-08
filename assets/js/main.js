@@ -3,7 +3,7 @@
  */
 const navBox = document.getElementById("nav-box");
 const toggleScroll = () => {
-  window.scrollY > 100
+  window.scrollY > 70
     ? navBox.classList.add("scrolled")
     : navBox.classList.remove("scrolled");
 };

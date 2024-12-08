@@ -102,16 +102,18 @@
                   We implement software solutions for your business.
                 </h1>
                 <p
-                  class="tracking-normal lg:text-[22px]/[28px] text-[18px]/[24px] mt-2 mb-4 lg:mb-6"
+                  class="tracking-normal lg:text-[22px]/[28px] text-[18px]/[24px] mt-2 mb-4 lg:mb-6 max-w-[80%] xs:max-w-full"
                 >
                   We are a team of talented software developers that can bring
                   your ideas to life.
                 </p>
-                <div class="flex items-center flex-wrap xxs:flex-nowrap gap-2">
+                <div class="flex items-center flex-wrap gap-x-2 gap-y-3">
                   <a class="button hash-link" href="#about">Get started</a>
-                  <a href="#contact" class="button-transparent hash-link">
+                  <a href="#contact" class="button-outline gap-x-2 hash-link">
                     <span>Contact us</span>
-                    <i class="bi bi-arrow-right text-[18px]/[1] mt-[3px]"></i>
+                    <i
+                      class="animate-custom-zigzag bi bi-arrow-right text-[18px]/[1] mt-[3px]"
+                    ></i>
                   </a>
                 </div>
               </div>
@@ -164,7 +166,9 @@
           <div>
             <ul class="row flex-row *:lg:w-1/4 *:sm:w-1/2 *:w-full *:*:h-full">
               <li>
-                <div class="flex flex-col rounded-[5px] px-6 py-8 bg-white">
+                <div
+                  class="flex flex-col rounded-[5px] px-4 md:px-6 md:py-8 py-6 bg-white"
+                >
                   <span
                     class="bg-secondary-100 w-11 h-11 rounded-[5px] flex items-center justify-center mb-3"
                   >
@@ -180,7 +184,9 @@
                 </div>
               </li>
               <li>
-                <div class="flex flex-col rounded-[5px] px-6 py-8 bg-white">
+                <div
+                  class="flex flex-col rounded-[5px] px-4 md:px-6 md:py-8 py-6 bg-white"
+                >
                   <span
                     class="bg-secondary-100 w-11 h-11 rounded-[5px] flex items-center justify-center mb-3"
                   >
@@ -196,7 +202,9 @@
                 </div>
               </li>
               <li>
-                <div class="flex flex-col rounded-[5px] px-6 py-8 bg-white">
+                <div
+                  class="flex flex-col rounded-[5px] px-4 md:px-6 md:py-8 py-6 bg-white"
+                >
                   <span
                     class="bg-secondary-100 w-11 h-11 rounded-[5px] flex items-center justify-center mb-3"
                   >
@@ -212,7 +220,9 @@
                 </div>
               </li>
               <li>
-                <div class="flex flex-col rounded-[5px] px-6 py-8 bg-white">
+                <div
+                  class="flex flex-col rounded-[5px] px-4 md:px-6 md:py-8 py-6 bg-white"
+                >
                   <span
                     class="bg-secondary-100 w-11 h-11 rounded-[5px] flex items-center justify-center mb-3"
                   >
@@ -231,11 +241,15 @@
           </div>
         </div>
       </section>
-      <div class="py-20 bg-secondary-100">
+      <div class="md:py-20 py-14 bg-secondary-100">
         <div class="custom-container">
-          <div class="flex items-center justify-between">
+          <div
+            class="flex md:flex-row flex-col md:items-center gap-x-[30px] justify-between gap-y-4"
+          >
             <div>
-              <h2 class="text-[28px]/[36px] text-darkpurple-100 mb-1">
+              <h2
+                class="md:text-[28px]/[36px] text-[24px]/[32px] text-darkpurple-100 mb-1"
+              >
                 Have an IT solution in mind? We’ve got you covered!
               </h2>
               <p>
@@ -243,9 +257,13 @@
                 delivering exceptional results.
               </p>
             </div>
-            <a href="#contact" class="button hash-link"
-              >Start your project with us</a
-            >
+            <div>
+              <a
+                href="#contact"
+                class="inline-block button hash-link min-w-[231.5px]"
+                >Start your project with us</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -253,13 +271,13 @@
         <div class="custom-container">
           <h3 class="title">Portfolio</h3>
           <ul
-            class="*:flex gap-y-6 *:gap-6 flex flex-col *:p-6 *:rounded-[5px] *:*:w-1/2 *:bg-grey-100"
+            class="gap-y-6 *:gap-4 *:md:gap-6 flex flex-col *:py-6 *:px-4 *:md:px-6 *:rounded-[5px] *:bg-grey-100"
           >
-            <li>
+            <li class="flex-col md:flex-row flex *:md:flex-1">
               <div
-                class="flex justify-center bg-entamarket bg-white bg-contain bg-no-repeat bg-center"
+                class="flex justify-center bg-entamarket bg-white bg-contain bg-no-repeat bg-center xs:min-h-60 min-h-44"
               ></div>
-              <div class="py-6">
+              <div class="md:py-6">
                 <h1 class="text-darkpurple-100 text-[22px]/[28px] mb-1">
                   EntaMarket
                 </h1>
@@ -270,13 +288,19 @@
                   user-friendly platform featuring easy navigation, secure
                   payments, and reliable delivery.
                 </p>
-                <a href="#" class="button-outline inline-block mt-4"
+                <a
+                  href="https://entamarket.com/"
+                  target="_blank"
+                  class="button-outline inline-block mt-4"
                   >Visit website</a
                 >
               </div>
             </li>
-            <li>
-              <div class="text-right py-6">
+            <li class="md:flex-row-reverse flex-col flex *:md:flex-1">
+              <div
+                class="flex justify-center xs:min-h-60 min-h-44 bg-white bg-contain bg-no-repeat bg-center bg-medpharm"
+              ></div>
+              <div class="md:text-right md:py-6">
                 <h1 class="text-darkpurple-100 text-[22px]/[28px] mb-1">
                   Medpharm Consult
                 </h1>
@@ -287,17 +311,19 @@
                   experienced healthcare professionals, Medpharm Consult offers
                   reliable guidance on a range of health-related issues.
                 </p>
-                <a href="#" class="button-outline mt-4">Visit website</a>
+                <a
+                  href="https://medpharmconsult.org/"
+                  class="button-outline mt-4"
+                  target="_blank"
+                  >Visit website</a
+                >
               </div>
-              <div
-                class="flex justify-center bg-medpharm bg-white bg-contain bg-no-repeat bg-center"
-              ></div>
             </li>
-            <li>
+            <li class="flex-col md:flex-row flex *:md:flex-1">
               <div
-                class="flex bg-white justify-center bg-magnus bg-contain bg-no-repeat bg-center"
+                class="flex bg-white justify-center bg-magnus bg-contain bg-no-repeat bg-center xs:min-h-60 min-h-44"
               ></div>
-              <div class="py-6">
+              <div class="md:py-6">
                 <h1 class="text-darkpurple-100 text-[22px]/[28px] mb-1">
                   Magnus Media Academy
                 </h1>
@@ -308,7 +334,10 @@
                   provides aspiring professionals with the skills needed to
                   succeed in today’s media industry.
                 </p>
-                <a href="#" class="button-outline inline-block mt-4"
+                <a
+                  href="https://elearning.magnusfilmacademy.com/"
+                  class="button-outline inline-block mt-4"
+                  target="_blank"
                   >Visit website</a
                 >
               </div>
@@ -359,42 +388,57 @@
                     <h3 class="whitespace-nowrap text-darkpurple-100">
                       Phone number
                     </h3>
-                    <p class="text-sm">0918311503</p>
+                    <p class="text-sm">+234 9128 3115 03</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="md:w-7/12">
-              <div class="bg-white p-6 rounded-[5px]">
+              <div class="bg-white p-4 md:p-6 rounded-[5px]">
                 <form class="flex-col flex gap-y-[18px]">
-                  <div class="row *:lg:w-1/2 *:flex *:flex-col *:gap-y-3">
+                  <div
+                    class="row *:flex-1 form-row *:flex *:flex-col *:gap-y-3"
+                  >
                     <div>
                       <label>Name</label>
                       <input
                         type="text"
-                        class="placeholder:text-grey-200 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
+                        class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
                         placeholder="Enter name"
                         required
                       />
                     </div>
-                    <div class="field-group">
+                    <div>
                       <label>Email</label>
                       <input
                         type="email"
-                        class="placeholder:text-grey-200 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
+                        class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
                         placeholder="Enter email"
                         required
                       />
                     </div>
                   </div>
-                  <div class="flex-col gap-y-3 flex">
-                    <label>Subject</label>
-                    <input
-                      type="text"
-                      class="placeholder:text-grey-200 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
-                      placeholder="Subject"
-                      required
-                    />
+                  <div
+                    class="row *:flex-1 form-row *:flex *:flex-col *:gap-y-3"
+                  >
+                    <div>
+                      <label>Phone </label>
+                      <input
+                        type="text"
+                        class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
+                        placeholder="Enter phone number"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label>Subject</label>
+                      <input
+                        type="text"
+                        class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
+                        placeholder="Enter subject"
+                        required
+                      />
+                    </div>
                   </div>
                   <div class="flex flex-col gap-y-3">
                     <label>Message</label>
@@ -413,7 +457,190 @@
           </div>
         </div>
       </section>
+      <div class="md:py-20 py-14 bg-secondary-100">
+        <div class="custom-container">
+          <div
+            class="flex md:flex-row flex-col md:items-center gap-x-[30px] justify-between gap-y-4"
+          >
+            <div>
+              <h2
+                class="md:text-[28px]/[36px] text-[24px]/[32px] text-darkpurple-100 mb-1"
+              >
+                Subscribe to our newsletter
+              </h2>
+              <p>
+                Subscribe to our newsletter and receive the latest news about
+                our products.
+              </p>
+            </div>
+            <form
+              class="flex items-start xs:items-center gap-y-4 flex-col xs:flex-row max-w-[520px] w-full"
+            >
+              <input
+                type="email"
+                class="placeholder:text-grey-200 w-full xs:w-auto rounded-[5px] xs:rounded-r-none flex-1 py-[12px] px-[16px] border-[1px] xs:border-r-0 max-h-12 placeholder:font-light"
+                placeholder="Your email"
+                required
+              />
+              <button type="submit" class="button subscribe">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer>
+      <div class="custom-container">
+        <div>
+          <div class="section">
+            <ul class="row *:sm:w-1/2">
+              <li>
+                <ul class="row *:lg:w-1/2">
+                  <li>
+                    <div class="mb-4">
+                      <img src="/assets/img/Logo.svg" width="128" />
+                    </div>
+                    <p class="mb-1">
+                      <strong class="text-darkpurple-100">Phone: </strong>+234
+                      9128 3115 03
+                    </p>
+                    <p>
+                      <strong class="text-darkpurple-100">Email: </strong
+                      >brivnet@gmail.com
+                    </p>
+                  </li>
+                  <li>
+                    <h3 class="text-darkpurple-100 mb-2 text-[18px]">
+                      Company
+                    </h3>
+                    <ul>
+                      <li class="py-1">
+                        <a
+                          href="#header"
+                          class="hover:text-primary-100 hash-link"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="py-1">
+                        <a
+                          href="#about"
+                          class="hover:text-primary-100 hash-link"
+                          >About us</a
+                        >
+                      </li>
+                      <li class="py-1">
+                        <a
+                          href="#services"
+                          class="hover:text-primary-100 hash-link"
+                          >Services</a
+                        >
+                      </li>
+                      <li class="py-1">
+                        <a
+                          href="#portfolio"
+                          class="hover:text-primary-100 hash-link"
+                          >Portfolio</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="row *:lg:w-1/2">
+                  <li>
+                    <h3 class="text-darkpurple-100 mb-2 text-[18px]">
+                      Services
+                    </h3>
+                    <ul>
+                      <li class="py-1">
+                        <a
+                          href="#services"
+                          class="hover:text-primary-100 hash-link"
+                          >Web development</a
+                        >
+                      </li>
+                      <li class="py-1">
+                        <a
+                          href="#services"
+                          class="hover:text-primary-100 hash-link"
+                          >Mobile app development</a
+                        >
+                      </li>
+                      <li class="py-1">
+                        <a
+                          href="#services"
+                          class="hover:text-primary-100 hash-link"
+                          >Desktop app development</a
+                        >
+                      </li>
+                      <li class="py-1">
+                        <a
+                          href="#services"
+                          class="hover:text-primary-100 hash-link"
+                          >Cloud services</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3 class="text-darkpurple-100 mb-3 text-[18px]">
+                      Follow us
+                    </h3>
+                    <p class="mb-4">Connect with us on social media.</p>
+                    <ul class="flex items-center gap-x-2">
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="w-10 flex border-1 easy-ease hover:*:text-primary-100 hover:border-primary-100 rounded-full border-black-100 h-10"
+                          ><i
+                            class="bi w-full h-full easy-ease flex justify-center items-center bi-twitter-x"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="w-10 flex border-1 easy-ease hover:*:text-primary-100 hover:border-primary-100 rounded-full border-black-100 h-10"
+                          ><i
+                            class="w-full h-full easy-ease flex justify-center items-center bi bi-facebook"
+                          ></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="w-10 flex border-1 easy-ease hover:*:text-primary-100 hover:border-primary-100 rounded-full border-black-100 h-10"
+                          ><i
+                            class="w-full h-full easy-ease flex justify-center items-center bi bi-instagram"
+                          ></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="w-10 flex border-1 easy-ease hover:*:text-primary-100 hover:border-primary-100 rounded-full border-black-100 h-10"
+                          ><i
+                            class="w-full h-full easy-ease flex justify-center items-center bi bi-linkedin"
+                          ></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 text-center border-gray-300 border-t-1 px-[15px]">
+        Copyright 2024 © <strong>Brivnet</strong>.<br class="xs:hidden" />
+        All rights reserved.
+      </div>
+    </footer>
     <script src="assets/js/main.js" type="text/javascript"></script>
   </body>
 </html>
