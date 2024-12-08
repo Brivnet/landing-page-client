@@ -9233,6 +9233,16 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[18px\]\/\[18px\] {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.text-\[16px\]\/\[24px\] {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
