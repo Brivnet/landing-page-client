@@ -18,6 +18,7 @@ module.exports = {
           "up-down 2s ease-in-out infinite alternate-reverse both",
         "custom-zigzag":
           "left-right 0.4s ease-in-out infinite alternate-reverse both",
+        "animate-spin": "rotate 1s infinite linear",
       },
       colors: {
         primary: {

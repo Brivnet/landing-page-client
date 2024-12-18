@@ -1,3 +1,5 @@
+import { sendEmail } from "./api.js";
+
 /**
  * Change nav class on scroll
  */
@@ -77,4 +79,23 @@ window.addEventListener("load", () => {
 document.addEventListener("scroll", () => {
   scrollSpy();
   toggleScroll();
+});
+
+/**
+ * Sending email for contact form
+ */
+const form = document.getElementById("site-form");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const formEntries = Object.fromEntries(formData);
+  const formElements = Array.from(form.elements);
+  formElements.forEach((el) => {
+    el.disabled = true;
+  });
+  await sendEmail(formEntries);
+  formElements.forEach((el) => {
+    el.value = "";
+    el.disabled = false;
+  });
 });

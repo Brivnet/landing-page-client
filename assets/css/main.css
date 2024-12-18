@@ -8851,6 +8851,10 @@ video {
   margin-top: 70px;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -8941,6 +8945,16 @@ video {
 
 .animate-custom-zigzag {
   animation: left-right 0.4s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {
@@ -9256,6 +9270,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-grey-200 {
+  --tw-text-opacity: 1;
+  color: rgb(180 180 180 / var(--tw-text-opacity));
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -9343,6 +9362,36 @@ body.mobile-nav-open {
 
 .row.form-row {
   row-gap: 18px;
+}
+
+.custom-toast {
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.custom-toast.success {
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.custom-toast.success > * {
+  padding: 0px;
+}
+
+.custom-toast.success {
+  background: #28a745;
+}
+
+.custom-toast.danger {
+  background: #c82333;
 }
 
 .active-link {
@@ -9555,6 +9604,12 @@ body {
 
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
   }
 }
 

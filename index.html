@@ -6,12 +6,18 @@
     <title>Brivnet - quality software solutions</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-    <!--Google fonts -->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <!-- Toastify CSS  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -397,7 +403,7 @@
             </div>
             <div class="md:w-7/12">
               <div class="bg-white p-4 md:p-6 rounded-[5px]">
-                <form class="flex-col flex gap-y-[18px]">
+                <form class="flex-col flex gap-y-[18px]" id="site-form">
                   <div
                     class="row *:flex-1 form-row *:flex *:flex-col *:gap-y-3"
                   >
@@ -406,7 +412,8 @@
                       <input
                         type="text"
                         class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
-                        placeholder="Enter name"
+                        placeholder="Name"
+                        name="name"
                         required
                       />
                     </div>
@@ -414,47 +421,41 @@
                       <label>Email</label>
                       <input
                         type="email"
+                        name="email"
                         class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
-                        placeholder="Enter email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="row *:flex-1 form-row *:flex *:flex-col *:gap-y-3"
-                  >
-                    <div>
-                      <label>Phone </label>
-                      <input
-                        type="text"
-                        class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
-                        placeholder="Enter phone number"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label>Subject</label>
-                      <input
-                        type="text"
-                        class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
-                        placeholder="Enter subject"
+                        placeholder="Email"
                         required
                       />
                     </div>
                   </div>
                   <div class="flex flex-col gap-y-3">
+                    <label>Phone </label>
+                    <input
+                      type="text"
+                      name="phoneNo"
+                      class="placeholder:text-grey-200 max-h-12 rounded-[5px] py-[12px] px-[16px] border-[1px] placeholder:font-light"
+                      placeholder="Phone"
+                      required
+                    />
+                  </div>
+                  <div class="flex flex-col gap-y-3">
                     <label>Message</label>
                     <textarea
-                      placeholder="Enter message "
+                      placeholder="Message "
                       required
+                      name="message"
                       class="border-[1px] w-full border-grey-300 rounded-[5px] py-[12px] px-[16px] placeholder:text-grey-200 min-h-[192px] placeholder:font-light"
                     ></textarea>
                   </div>
-                  <button class="mt-[6px] self-start button">
-                    Send message
-                  </button>
+                  <div class="flex gap-x-4 mt-[6px] items-center" id="form-box">
+                    <button class="self-start button">Send message</button>
+                  </div>
                 </form>
               </div>
+              <p class="mt-4">
+                By clicking the submit button, you give us permission to send
+                you emails.
+              </p>
             </div>
           </div>
         </div>
@@ -484,6 +485,7 @@
                 placeholder="Your email"
                 required
               />
+
               <button type="submit" class="button subscribe">Subscribe</button>
             </form>
           </div>
@@ -602,7 +604,7 @@
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="https://facebook.com/profile.php?id=61561479219068"
                           target="_blank"
                           class="w-10 flex border-1 easy-ease hover:*:text-primary-100 hover:border-primary-100 rounded-full border-black-100 h-10"
                           ><i
@@ -612,7 +614,7 @@
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="https://www.instagram.com/brivnet/"
                           target="_blank"
                           class="w-10 flex border-1 easy-ease hover:*:text-primary-100 hover:border-primary-100 rounded-full border-black-100 h-10"
                           ><i
@@ -643,6 +645,10 @@
         All rights reserved.
       </div>
     </footer>
-    <script src="assets/js/main.js" type="text/javascript"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="assets/js/main.js" type="module"></script>
   </body>
 </html>
