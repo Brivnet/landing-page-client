@@ -25,6 +25,10 @@ body.mobile-nav-open {
   @apply container mx-auto px-[15px] max-w-[100%] md:max-w-[1400px];
 }
 
+.spinner-mini.newsletter {
+  @apply absolute top-1/2 translate-y-[-50%] right-4 bg-white;
+}
+
 .row {
   @apply mx-[-15px] flex-row *:w-full flex flex-wrap gap-y-6 *:px-[15px];
 }

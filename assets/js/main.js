@@ -1,4 +1,4 @@
-import { sendEmail } from "./api.js";
+import { sendEmail, subscribeNewsletter } from "./api.js";
 
 /**
  * Change nav class on scroll
@@ -98,4 +98,19 @@ form.addEventListener("submit", async (e) => {
     el.value = "";
     el.disabled = false;
   });
+});
+
+/**
+ * Subscribing for newsletter form
+ */
+const newsForm = document.getElementById("newsletter-form");
+newsForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const newsData = new FormData(e.target);
+  const data = Object.fromEntries(newsData);
+  const newsInput = Array.from(newsForm.elements)[0];
+  newsInput.disabled = true;
+  await subscribeNewsletter(data);
+  newsInput.value = "";
+  newsInput.disabled = false;
 });
