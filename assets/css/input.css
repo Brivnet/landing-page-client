@@ -26,7 +26,7 @@ body.mobile-nav-open {
 }
 
 .spinner-mini.newsletter {
-  @apply absolute top-1/2 translate-y-[-50%] right-4 bg-white;
+  @apply absolute top-1/2 translate-y-[-50%] right-4;
 }
 
 .row {
@@ -103,6 +103,10 @@ a {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+input:disabled,
+textarea:disabled {
+  @apply bg-white cursor-not-allowed;
 }
 
 @keyframes up-down {

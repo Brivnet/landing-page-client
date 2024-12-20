@@ -9342,8 +9342,6 @@ body.mobile-nav-open {
   right: 1rem;
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .row {
@@ -9596,6 +9594,13 @@ a {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+
+input:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 @keyframes up-down {
