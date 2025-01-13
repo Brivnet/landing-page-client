@@ -9288,6 +9288,11 @@ body.mobile-nav-open {
   overflow: hidden;
 }
 
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .custom-container {
   width: 100%;
 }
@@ -9364,6 +9369,9 @@ body.mobile-nav-open {
 }
 
 .custom-toast {
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
   border-radius: 5px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -9375,13 +9383,7 @@ body.mobile-nav-open {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.custom-toast.success {
-  display: flex;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
-
-.custom-toast.success > * {
+.custom-toast > * {
   padding: 0px;
 }
 
